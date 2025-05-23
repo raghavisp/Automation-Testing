@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af44742d-8476-4fbd-bc09-8414f68ad818" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MYMBNAutomationTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/PhoneSCRCPY.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/config.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/highlight.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/mitt_mbn_web_elements.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/mitt_mbn_xpath.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/phone_automation.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/web_elements.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/web_elements_xpath.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_script/microsip.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_script/mitt_mbn.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_script/phonecpy.robot" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SQL File" />
+        <option value="Robot" />
+        <option value="Robot Test File" />
+        <option value="Robot Feature File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/resource/web_elements.resource" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2tPHivk0J1lALZiZ0WFAJ4YEDml" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.log.html.executor": "Run",
+    "JavaScript Debug.report.html.executor": "Run",
+    "Python tests.Python tests in MYMBNAutomationTest.executor": "Run",
+    "Python.Highlight.executor": "Run",
+    "Python.Main.robot.executor": "Run",
+    "Robot Framework.Run Current Test Suite.executor": "Run",
+    "Robot Framework.Run Selected Test.executor": "Run",
+    "Robot Framework.Trn Current Test Suite.executor": "Run",
+    "Robot Framework.run [CLick Hent Button When Q Is Paused].executor": "Run",
+    "Robot Framework.run [CRM For Automatisk Etter Anropet Besvares Anrop].executor": "Run",
+    "Robot Framework.run [CRM For Automatisk Etter Avsluttet Anrop].executor": "Run",
+    "Robot Framework.run [CRM For Manual Hot Key].executor": "Run",
+    "Robot Framework.run [CRM For automatisk før anropet besvares].executor": "Run",
+    "Robot Framework.run [CRM For Åpne CRM-kobling Også Ved Utgående Anrop].executor": "Run",
+    "Robot Framework.run [CRM For Åpne CRM-kobling ved klikk på innringernotifikasjon].executor": "Run",
+    "Robot Framework.run [Check Call To Queue from MicroSIP Sett På Vent Og Gjenoppta].executor": "Run",
+    "Robot Framework.run [Check Call To Queue from MicroSIP legg På].executor": "Run",
+    "Robot Framework.run [Check Hent For Multiple Call In Queue Fuctionality Negative].executor": "Run",
+    "Robot Framework.run [Check Hent For Multiple Call In Queue Fuctionality].executor": "Run",
+    "Robot Framework.run [Check KØ].executor": "Run",
+    "Robot Framework.run [Check SettOver Samtalen from MS To Number With Member of More than Avtaller].executor": "Run",
+    "Robot Framework.run [Check SettOver Samtalen ring from Queue].executor": "Run",
+    "Robot Framework.run [Check SettOver Samtalen].executor": "Run",
+    "Robot Framework.run [Check for Konsult with Leggpå].executor": "Run",
+    "Robot Framework.run [Check for Konsult with SetOver For External user].executor": "Run",
+    "Robot Framework.run [Check for Konsult with SetOver].executor": "Run",
+    "Robot Framework.run [Check for Status].executor": "Run",
+    "Robot Framework.run [Ckeck VIP Navn På SB Anropslogg And Kø Prefix].executor": "Run",
+    "Robot Framework.run [Ckeck VIP Navn På SB Anropslogg].executor": "Run",
+    "Robot Framework.run [Click Hent on Avvis Call].executor": "Run",
+    "Robot Framework.run [Close MicroSIP Test].executor": "Run",
+    "Robot Framework.run [Close MicroSIP].executor": "Run",
+    "Robot Framework.run [Initial Call Answer End During Login In SB Test].executor": "Run",
+    "Robot Framework.run [Initial Call Answer End During Login In SB].executor": "Run",
+    "Robot Framework.run [Konsult Call Ring From Queue Og SettOver].executor": "Run",
+    "Robot Framework.run [Konsult Call With Multiple Users On Kø Plukk Fra Kø Consult Og Settover].executor": "Run",
+    "Robot Framework.run [Launch MicroSIP].executor": "Run",
+    "Robot Framework.run [Launch Phone Copy].executor": "Run",
+    "Robot Framework.run [Logg In Phone].executor": "Run",
+    "Robot Framework.run [Login Mitt MBN Check Anropslogg].executor": "Run",
+    "Robot Framework.run [Login Mitt MBN Check Calling from Anropslogg].executor": "Run",
+    "Robot Framework.run [Login Mitt MBN Perform Sett På Vent And Gjenoppta].executor": "Run",
+    "Robot Framework.run [Login and Perform Actions Check Caller].executor": "Run",
+    "Robot Framework.run [Login and Perform Actions To Pause Kø].executor": "Run",
+    "Robot Framework.run [Login and Perform Actions].executor": "Run",
+    "Robot Framework.run [Melding from Queue].executor": "Run",
+    "Robot Framework.run [Merge All Logs Into Final Report].executor": "Run",
+    "Robot Framework.run [Open SMS App].executor": "Run",
+    "Robot Framework.run [Open Url In New Tab Already Opened And Wait1].executor": "Run",
+    "Robot Framework.run [Open Url].executor": "Run",
+    "Robot Framework.run [Receive An Incoming Call].executor": "Run",
+    "Robot Framework.run [Ring from Queue To Phone].executor": "Run",
+    "Robot Framework.run [Ring from Queue].executor": "Run",
+    "Robot Framework.run [Run All Scenarios].executor": "Run",
+    "Robot Framework.run [Send SMS Til En I Loggen].executor": "Run",
+    "Robot Framework.run [TC1].executor": "Run",
+    "Robot Framework.run [Test MicroSIP Automation].executor": "Run",
+    "Robot Framework.run [Test Notification click to be deleted].executor": "Run",
+    "Robot Framework.run [Transfer of call from MicroSip].executor": "Run",
+    "Robot Framework.run current file.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Skype og Lync test/PycharmProjects/MYMBNAutomationTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="MYMBNAutomationTest" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="MYMBNAutomationTest" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\PO" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\test_script" />
+      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\log" />
+      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\screen_shots" />
+      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\report" />
+      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\results" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Robot Framework.Run Selected Test">
+    <configuration name="Run Selected Test" type="RobotFramework" factoryName="RobotFramework">
+      <option name="target" value="$FilePath$" />
+      <option name="args">
+        <list>
+          <option value="--test" />
+          <option value="*$SelectedText$*" />
+        </list>
+      </option>
+      <option name="env" />
+      <option name="workingDir" value="$ProjectFileDir$" />
+      <option name="makeSuite" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="RobotFramework" factoryName="RobotFramework">
+      <option name="target" value="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\Main..robot" />
+      <option name="args">
+        <list>
+          <option value="$FileDir$" />
+        </list>
+      </option>
+      <option name="env" />
+      <option name="workingDir" value="$FileDir$" />
+      <option name="makeSuite" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af44742d-8476-4fbd-bc09-8414f68ad818" name="Changes" comment="" />
+      <created>1740246922163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740246922163</updated>
+      <workItem from="1740246922899" duration="585000" />
+      <workItem from="1740247526824" duration="290000" />
+      <workItem from="1740247931568" duration="2311000" />
+      <workItem from="1740387916107" duration="619000" />
+      <workItem from="1740390930392" duration="3562000" />
+      <workItem from="1740396922179" duration="8287000" />
+      <workItem from="1740556922536" duration="1327000" />
+      <workItem from="1741249335312" duration="1252000" />
+      <workItem from="1741250620168" duration="12000" />
+      <workItem from="1741250648574" duration="17066000" />
+      <workItem from="1741597581661" duration="1516000" />
+      <workItem from="1741599124868" duration="1554000" />
+      <workItem from="1741603289458" duration="1358000" />
+      <workItem from="1741604677414" duration="106000" />
+      <workItem from="1741604802280" duration="257000" />
+      <workItem from="1741605074935" duration="4000" />
+      <workItem from="1741605092926" duration="305000" />
+      <workItem from="1741605417284" duration="1912000" />
+      <workItem from="1741607369873" duration="4462000" />
+      <workItem from="1741613007384" duration="1489000" />
+      <workItem from="1741617130713" duration="183000" />
+      <workItem from="1741617339938" duration="14091000" />
+      <workItem from="1741766321757" duration="8743000" />
+      <workItem from="1741782381179" duration="6031000" />
+      <workItem from="1741816606885" duration="1804000" />
+      <workItem from="1741818495595" duration="18440000" />
+      <workItem from="1742217929102" duration="13343000" />
+      <workItem from="1742396310332" duration="58000" />
+      <workItem from="1742396397613" duration="40000" />
+      <workItem from="1742396452753" duration="210000" />
+      <workItem from="1742396687524" duration="4065000" />
+      <workItem from="1742459844923" duration="104000" />
+      <workItem from="1742459998097" duration="111000" />
+      <workItem from="1742460129392" duration="942000" />
+      <workItem from="1742461108435" duration="76000" />
+      <workItem from="1742461200917" duration="2121000" />
+      <workItem from="1742463533433" duration="17605000" />
+      <workItem from="1742743284186" duration="9958000" />
+      <workItem from="1742754830180" duration="344000" />
+      <workItem from="1742755369387" duration="3553000" />
+      <workItem from="1742764081382" duration="3444000" />
+      <workItem from="1742767600121" duration="390000" />
+      <workItem from="1742768016621" duration="614000" />
+      <workItem from="1742768663446" duration="1122000" />
+      <workItem from="1742769828255" duration="1084000" />
+      <workItem from="1742809498774" duration="1835000" />
+      <workItem from="1742811449979" duration="3883000" />
+      <workItem from="1742816281446" duration="14271000" />
+      <workItem from="1742890130546" duration="1877000" />
+      <workItem from="1742892107424" duration="75000" />
+      <workItem from="1742892200507" duration="25000" />
+      <workItem from="1742892238627" duration="8634000" />
+      <workItem from="1742901018089" duration="1319000" />
+      <workItem from="1742902390472" duration="312000" />
+      <workItem from="1742902733334" duration="18000" />
+      <workItem from="1742902764037" duration="133000" />
+      <workItem from="1742902913533" duration="26460000" />
+      <workItem from="1742999051222" duration="30215000" />
+      <workItem from="1743164005818" duration="24353000" />
+      <workItem from="1743404766484" duration="2916000" />
+      <workItem from="1743407815048" duration="26659000" />
+      <workItem from="1743510859867" duration="77014000" />
+      <workItem from="1744187423527" duration="989000" />
+      <workItem from="1744192060249" duration="11129000" />
+      <workItem from="1744272904060" duration="17383000" />
+      <workItem from="1744373950876" duration="67895000" />
+      <workItem from="1745825481913" duration="9009000" />
+      <workItem from="1745842364178" duration="3617000" />
+      <workItem from="1745868949824" duration="6500000" />
+      <workItem from="1745910246621" duration="92832000" />
+      <workItem from="1746618680230" duration="34382000" />
+      <workItem from="1746795739520" duration="78991000" />
+      <workItem from="1747204791797" duration="7762000" />
+      <workItem from="1747217439502" duration="64325000" />
+      <workItem from="1747726489731" duration="4118000" />
+      <workItem from="1747763421676" duration="849000" />
+      <workItem from="1747764951307" duration="288000" />
+      <workItem from="1747765426775" duration="3924000" />
+      <workItem from="1747823962133" duration="27980000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MYMBNAutomationTest$Main_robot.coverage" NAME="Main.robot Coverage Results" MODIFIED="1741607276465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MYMBNAutomationTest$Highlight.coverage" NAME="Highlight Coverage Results" MODIFIED="1741612123944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PO" />
+  </component>
+</project>
