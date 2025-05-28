@@ -171,7 +171,7 @@ Logout Sequence
 
 Send SMS Til en Loggen
     [Documentation]   SMS to [Documentation]  Innkommende anrop
-    Wait Until Element Is Visible    xpath=//div[@class="cdk-overlay-pane"]    timeout=2s
+    Wait Until Element Is Visible    xpath=//div[@class="mat-mdc-snack-bar-label mdc-snackbar__label"]    timeout=2s
     ${snaker_label}    Get WebElement     xpath=//div[@class="mat-mdc-snack-bar-label mdc-snackbar__label"]
     Highlight Controls    ${snaker_label}    Highlight of snaker label
     SeleniumLibrary.Wait Until Element Is Enabled    xpath=//span[normalize-space()="Avvis med SMS"]    timeout=7s

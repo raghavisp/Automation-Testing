@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44742d-8476-4fbd-bc09-8414f68ad818" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MYMBNAutomationTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/PhoneSCRCPY.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/config.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/highlight.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/mitt_mbn_web_elements.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/mitt_mbn_xpath.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/phone_automation.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/web_elements.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/web_elements_xpath.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_script/microsip.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_script/mitt_mbn.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_script/phonecpy.robot" afterDir="false" />
+    <list default="true" id="af44742d-8476-4fbd-bc09-8414f68ad818" name="Changes" comment="First commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/PhoneSCRCPY.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/PhoneSCRCPY.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/config.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/config.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/mitt_mbn_web_elements.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/mitt_mbn_web_elements.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/phone_automation.resource" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/web_elements.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/web_elements.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_script/mitt_mbn.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_script/mitt_mbn.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_script/phonecpy.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_script/phonecpy.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +66,10 @@
     "Robot Framework.run [CRM For Automatisk Etter Avsluttet Anrop].executor": "Run",
     "Robot Framework.run [CRM For Manual Hot Key].executor": "Run",
     "Robot Framework.run [CRM For automatisk før anropet besvares].executor": "Run",
+    "Robot Framework.run [CRM For Åpne CRM-kobling Også Ved Utgående Anrop Med Manual Hot Key].executor": "Run",
     "Robot Framework.run [CRM For Åpne CRM-kobling Også Ved Utgående Anrop].executor": "Run",
     "Robot Framework.run [CRM For Åpne CRM-kobling ved klikk på innringernotifikasjon].executor": "Run",
+    "Robot Framework.run [Call To Q And Reply with a Message From Operator].executor": "Run",
     "Robot Framework.run [Check Call To Queue from MicroSIP Sett På Vent Og Gjenoppta].executor": "Run",
     "Robot Framework.run [Check Call To Queue from MicroSIP legg På].executor": "Run",
     "Robot Framework.run [Check Hent For Multiple Call In Queue Fuctionality Negative].executor": "Run",
@@ -96,6 +90,9 @@
     "Robot Framework.run [Initial Call Answer End During Login In SB Test].executor": "Run",
     "Robot Framework.run [Initial Call Answer End During Login In SB].executor": "Run",
     "Robot Framework.run [Konsult Call Ring From Queue Og SettOver].executor": "Run",
+    "Robot Framework.run [Konsult Call Ring From Queue to Phone With 2 Avtaler Og SettOver].executor": "Run",
+    "Robot Framework.run [Konsult Call Ring From Queue to Phone With Offset Phone With 2 Avtaller Og SettOver].executor": "Run",
+    "Robot Framework.run [Konsult Call Ring From Queue to Phone With Onset Phone Og SettOver].executor": "Run",
     "Robot Framework.run [Konsult Call With Multiple Users On Kø Plukk Fra Kø Consult Og Settover].executor": "Run",
     "Robot Framework.run [Launch MicroSIP].executor": "Run",
     "Robot Framework.run [Launch Phone Copy].executor": "Run",
@@ -106,8 +103,13 @@
     "Robot Framework.run [Login and Perform Actions Check Caller].executor": "Run",
     "Robot Framework.run [Login and Perform Actions To Pause Kø].executor": "Run",
     "Robot Framework.run [Login and Perform Actions].executor": "Run",
+    "Robot Framework.run [Melding from Queue Custom].executor": "Run",
+    "Robot Framework.run [Melding from Queue Predefined message Meldingsmal: MBN App].executor": "Run",
+    "Robot Framework.run [Melding from Queue Predefined message Meldingsmal: Ring sentralbord].executor": "Run",
+    "Robot Framework.run [Melding from Queue Predefined message Meldingsmal: Ring til].executor": "Run",
     "Robot Framework.run [Melding from Queue].executor": "Run",
     "Robot Framework.run [Merge All Logs Into Final Report].executor": "Run",
+    "Robot Framework.run [Open SMS App Test].executor": "Run",
     "Robot Framework.run [Open SMS App].executor": "Run",
     "Robot Framework.run [Open Url In New Tab Already Opened And Wait1].executor": "Run",
     "Robot Framework.run [Open Url].executor": "Run",
@@ -132,7 +134,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -277,8 +279,18 @@
       <workItem from="1747763421676" duration="849000" />
       <workItem from="1747764951307" duration="288000" />
       <workItem from="1747765426775" duration="3924000" />
-      <workItem from="1747823962133" duration="27980000" />
+      <workItem from="1747823962133" duration="46348000" />
+      <workItem from="1748259766251" duration="18482000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1747988769852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747988769852</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,11 +301,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MYMBNAutomationTest$Main_robot.coverage" NAME="Main.robot Coverage Results" MODIFIED="1741607276465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

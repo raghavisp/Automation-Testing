@@ -5,7 +5,7 @@ Resource    ../resource/app_elements.resource
 Resource    ../resource/mitt_mbn_web_elements.resource
 Resource    ../resource/PhoneSCRCPY.resource
 
-Suite Setup
+Suite Setup    Open Web Browser And Maximize Login
 Suite Teardown    Close WebBrowser And MicroSIP
 
 
@@ -27,6 +27,17 @@ Login Mitt MBN Perform Sett På Vent And Gjenoppta
     Call Highlight Contact Card In Mitt MBN
     Call To MittMBN Sett På Vent
     Call To MittMBN Gjenoppta
+
+Login Mitt MBN Perform Sett På Vent And Leggpå
+    Launch SwitchBoard
+    Change To Mitt MBN Page
+    Dial From One MicroSIP To Another And Answer Call From MicroSIP1    ${MICROSIP_1_APP_NAME}    ${MICROSIP_2_APP}    ${MICROSIP_2_APP_NAME}    ${PHONE_NUMBER_1}
+    Call Active In Mitt MBN
+    Call Highlight Contact Card In Mitt MBN
+    Call To MittMBN Sett På Vent
+    Sleep    4s
+    Call To MittMBN Legg På
+
 
 Login Mitt MBN Check Anropslogg
     Launch SwitchBoard
@@ -60,6 +71,7 @@ Send SMS Til En I Loggen
     Sleep    3s
     Launch MicroSIP    ${MICROSIP_1_APP}    ${MICROSIP_1_APP_NAME}
     MakeCall From PCY    ${PHONE_NUMBER_1}
+    Incoming Call Button    ${MICROSIP_1_APP_NAME}
     Send SMS Til en Loggen
     Send Medling Fra MittMBN
     Open SMS Conversation From Caller    ${PHONE_NUMBER_TO_Q}

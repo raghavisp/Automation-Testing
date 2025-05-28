@@ -15,7 +15,7 @@ Resource    web_elements.resource
 Launch PhoneCpy
     [Documentation]    Launches the Phone Cpy Application.
     Log    📱 Launching Scrcpy for phone screen mirroring...
-    Start Process    scrcpy --max-size 500 --always-on-top --stay-awake    shell=True    stdout=NONE    stderr=NONE
+    Start Process    scrcpy --max-size 620 --always-on-top --stay-awake    shell=True    stdout=NONE    stderr=NONE
     Sleep    4s
 
 
@@ -24,6 +24,27 @@ MakeCall From PCY
     [Arguments]    ${phone_number}
     Log    📞 Dialing ${phone_number} on device ${DEVICE_ID}...
     Run Process    ${ADB_PATH}    -s    ${DEVICE_ID}    shell    am    start    -a    android.intent.action.CALL    -d    tel:${phone_number}    stdout=NONE    stderr=NONE
+
+Check Phone Is Ringing
+    ${result}=    Run Process    ${ADB_PATH}    -s    ${DEVICE_ID}    shell    dumpsys telephony.registry | grep mCallState    stdout=PIPE
+    Log    ${result.stdout}
+    ${lines}=    Split To Lines    ${result.stdout}
+    ${ringing_found}=    Set Variable    False
+
+    FOR    ${line}    IN    @{lines}
+        IF    "mCallState=1" in $line
+            ${ringing_found}=    Set Variable    True
+        END
+    END
+
+    IF    not ${ringing_found}
+        Fail    Phone is NOT ringing (no mCallState=1 found).
+    END
+
+Check If Call Is Active
+    ${output}=    Run Process    ${ADB_PATH}    -s    ${DEVICE_ID}    shell    dumpsys telephony.registry | grep mCallState  stdout=PIPE    shell=True
+    Log    ${output.stdout}
+    Should Contain    ${output.stdout}    mCallState
 
 End Call From PCY
     [Documentation]    Ends the ongoing call on the selected device.
@@ -52,11 +73,13 @@ Incoming Call PCY
     Sleep    1s
     Start Process    ${ADB_PATH}    -s    ${DEVICE_ID}    shell dumpsys telephony.registry
     Log    ✅ Incoming call
+    Sleep    2s
 
 Answer Call PCY
     Run Process    ${ADB_PATH}    -s    ${DEVICE_ID}    shell    input keyevent KEYCODE_CALL
     Sleep    1s
     Log    ✅ Call answered and active
+    Sleep    7s
 
 
 Get Last SMS Information
@@ -96,8 +119,18 @@ Get Last SMS Information
     Log    Body: ${body}
     Log    ***************************************
 
-     ${status}=    Run Keyword And Return Status    Should Be Equal As Strings    ${body}    ${MBN_App_text}
-     Log    result for  MBN App: ${status}
+    IF    '${body}' == '${MBN_App_text}'
+    Log    result for MBN App: ${body}
+    ELSE IF    '${body}' == '${Ring_SB}'
+        Log    result for Ring SB Option: ${body}
+    ELSE IF    '${body}' == '${Ring til}'
+        Log    result for Ring SB Option: ${body}
+    ELSE IF    '${body}' == '${Ingen mal valgt}'
+        Log    result for Custom Message: ${body}
+    ELSE
+        Log    none of the above
+    END
+
 
 
 Click On Recent Apps Button And Close All
@@ -127,12 +160,12 @@ Close PCY
 
 #************************************************************************************************************************************************************************************
  #FOF
- Open SMS App
+Open SMS App
     Launch PhoneCpy
     Unlock Device Screen
     Open SMS Conversation From Caller    ${PHONE_NUMBER_TO_Q}
     Get Last SMS Information
     Click To Go Back Twice
-    Sleep    4s
+    Sleep    2s
     Click On Recent Apps Button And Close All
     Sleep    5s

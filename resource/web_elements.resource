@@ -423,6 +423,8 @@ Send Medling
     [Documentation]   Send Medling from Queue sequence starts
     Log    clicking Send Medling button starts
     Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
+    Click Element    xpath=//mat-select[@role="combobox"]
+    Click Element    xpath=//span[normalize-space()="Ingen mal valgt"]
     Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
     Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
     Input Text    xpath=//textarea[@formcontrolname='text']    Hi, from Q via MicroSIP
@@ -430,6 +432,72 @@ Send Medling
     Get WebElement    xpath=//span[normalize-space()="Send"]
     Click Element    xpath=//span[normalize-space()="Send"]
     Sleep    4s
+
+Send Medling for MBN App
+    [Documentation]   Send Medling from Queue sequence starts for MBN App
+    Log    Send Medling from Queue sequence starts for MBN App
+    Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
+    Click Element    xpath=//mat-select[@role="combobox"]
+    Click Element    xpath=//span[normalize-space()="MBN App"]
+    Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
+    Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
+    Sleep    2s
+    Get WebElement    xpath=//span[normalize-space()="Send"]
+    Click Element    xpath=//span[normalize-space()="Send"]
+    Sleep    4s
+
+Send Medling for Ring sentralbord
+    [Documentation]   Send Medling from Queue sequence starts for Ring sentralbord
+    Log    Send Medling from Queue sequence starts for Ring sentralbord
+    Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
+    Click Element    xpath=//mat-select[@role="combobox"]
+    Click Element    xpath=//span[normalize-space()="Ring sentralbord"]
+    Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
+    Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
+    Sleep    2s
+    Get WebElement    xpath=//span[normalize-space()="Send"]
+    Click Element    xpath=//span[normalize-space()="Send"]
+    Sleep    4s
+
+Send Medling for Ring til
+    [Documentation]   Send Medling from Queue sequence starts for Ring til
+    Log    Send Medling from Queue sequence starts for Ring til
+    Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
+    Click Element    xpath=//mat-select[@role="combobox"]
+    Click Element    xpath=//span[normalize-space()="Ring til"]
+    Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
+    Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
+    Sleep    2s
+    Get WebElement    xpath=//span[normalize-space()="Send"]
+    Click Element    xpath=//span[normalize-space()="Send"]
+    Sleep    4s
+
+
+Send SMS from Caller Active Section SB
+    [Documentation]    Send SMS from Caller Active Section SB
+    Log     Send SMS from Caller Active Section SB
+    Wait Until Element Is Visible    xpath=//button[3]//mat-icon[1]//*[name()="svg"]   timeout=5s
+    Get WebElement    xpath=//button[3]//mat-icon[1]//*[name()="svg"]
+    Click Element    xpath=//button[3]//mat-icon[1]//*[name()="svg"]
+    Log    clicking  SMS button ends
+    Sleep    5s
+
+
+#Endre Flag stratus Dialod after Clicking SMS from active Caller
+#    //h5[normalize-space()="Endre flaggstatus?"]
+#//div[contains(text(),"Håndtert")]
+#//span[normalize-space()="Endre flaggstatus"]
+#//div[contains(text(),"Forsøkt kontaktet")]
+#//span[normalize-space()="Avbryt"]
+
+
+
+
+
+
+
+
+
 #****************************************************************************************************************************************************************
 #CRM basic elements
 Click Three Dots
@@ -466,9 +534,7 @@ Clicking Manually Using Hotkey
     Wait Until Element Is Visible    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]    timeout=2s
     Click Element    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]
     Click Element    xpath=//span[@class="mdc-list-item__primary-text"][normalize-space()="manuelt med hurtigtast"]
-    Get WebElement    xpath=//span[normalize-space()="OK"]
-    Click Element    xpath=//span[normalize-space()="OK"]
-    Sleep    5s
+
 
 
 Clicking Automatisk Før Anropet Besvares
@@ -477,6 +543,9 @@ Clicking Automatisk Før Anropet Besvares
     Wait Until Element Is Visible    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]    timeout=2s
     Click Element    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]
     Click Element    xpath=//span[normalize-space()="automatisk før anropet besvares"]
+    Sleep    2s
+
+Clicking Ok Button In CRM Dialogbox
     Get WebElement    xpath=//span[normalize-space()="OK"]
     Click Element    xpath=//span[normalize-space()="OK"]
     Sleep    5s
@@ -487,9 +556,7 @@ Clicking Automatisk Etter Anropet Besvares Anrop
     Wait Until Element Is Visible    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]    timeout=2s
     Click Element    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]
     Click Element    xpath=//span[normalize-space()="automatisk etter besvart anrop"]
-    Get WebElement    xpath=//span[normalize-space()="OK"]
-    Click Element    xpath=//span[normalize-space()="OK"]
-    Sleep    5s
+    Sleep    2s
 
 
 Clicking Automatisk Etter Avsluttet Anrop
@@ -498,8 +565,6 @@ Clicking Automatisk Etter Avsluttet Anrop
     Wait Until Element Is Visible    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]    timeout=2s
     Click Element    xpath=//mat-select[@formcontrolname="crmActivationMode"]//div[contains(@class, "mat-mdc-select-trigger")]
     Click Element    xpath=//span[normalize-space()="automatisk etter avsluttet anrop"]
-    Get WebElement    xpath=//span[normalize-space()="OK"]
-    Click Element    xpath=//span[normalize-space()="OK"]
     Sleep    5s
 
 Clicking Åpne CRM-kobling Også Ved Utgående Anrop
@@ -508,19 +573,13 @@ Clicking Åpne CRM-kobling Også Ved Utgående Anrop
     Wait Until Element Is Visible    xpath=//label[normalize-space()="Åpne CRM-kobling også ved utgående anrop"]
     Click Element    xpath=//label[normalize-space()="Åpne CRM-kobling også ved utgående anrop"]
     Sleep    2s
-    Get WebElement    xpath=//span[normalize-space()="OK"]
-    Click Element    xpath=//span[normalize-space()="OK"]
-    Sleep    5s
 
 Clicking Åpne CRM-kobling Ved Klikk På Innringernotifikasjon
     [Documentation]   Åpne CRM-kobling ved klikk på innringernotifikasjon
     builtin.Log    Åpne CRM-kobling ved klikk på innringernotifikasjon checkbox starts
     Wait Until Element Is Visible    xpath=//label[contains(text(),"Åpne CRM-kobling ved klikk på innringernotifikasjo")]
-    Click Element    xpath=//label[contains(text(),"Åpne CRM-kobling ved klikk på innringernotifikasjon")]
+    Click Element    xpath=//label[contains(text(),"Åpne CRM-kobling ved klikk på innringernotifikasjo")]
     Sleep    2s
-    Get WebElement    xpath=//span[normalize-space()="OK"]
-    Click Element    xpath=//span[normalize-space()="OK"]
-    Sleep    5s
 
 Click Menu Innringernotifikasjon Option
     [Documentation]   Clicking Menu Innringernotifikasjon Option
@@ -536,9 +595,7 @@ Verify and Click the Check box in Innringernotifikasjon Menu
     Wait Until Element Is Visible    xpath=//label[normalize-space()="Vis varsel om innringer"]    timeout=5s
     Click Element    xpath=//label[normalize-space()="Vis varsel om innringer"]
     Sleep    3s
-    Get WebElement    xpath=//span[normalize-space()="OK"]
-    Click Element    xpath=//span[normalize-space()="OK"]
-    Sleep    3s
+
 
 
 Click Menu Notat-popup
@@ -554,9 +611,7 @@ Verify and Click the Check box Notat-popup Option
     Wait Until Element Is Visible    xpath=//label[normalize-space()="Notatboks vises automatisk ved besvart anrop."]    timeout=5s
     Click Element    xpath=//input[@type="checkbox"]
     Sleep    3s
-    Get WebElement    xpath=//span[normalize-space()="Lukk"]
-    Click Element    xpath=//span[normalize-space()="Lukk"]
-    Sleep    3s
+
 
 Click Vis siste innringer
     [Documentation]   Clicking Vis siste innringer
@@ -708,6 +763,3 @@ Check Hent For Multiple Call In Queue Fuctionality
     Answer Call Button    ${MICROSIP_1_APP_NAME}
     Sleep    5s
 
-
-Verify Call Answered
-    Log    ndsjhbdjhkdsfjhb  j

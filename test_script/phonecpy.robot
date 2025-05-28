@@ -23,7 +23,7 @@ Open SMS App Test
     Open SMS Conversation From Caller    ${PHONE_NUMBER_TO_Q}
     Get Last SMS Information
     Click To Go Back Twice
-    Sleep    4s
+    Sleep    2s
     Click On Recent Apps Button And Close All
     Sleep    5s
 
@@ -33,6 +33,7 @@ Receive An Incoming Call
     Launch PhoneCpy
     Launch MicroSIP Basic    ${MICROSIP_1_APP}    ${MICROSIP_1_APP_NAME}    ${PHONE_NUMBER_SCRCPY}
     Incoming Call PCY
+    Check Phone Is Ringing
     Answer Call PCY
-    Sleep    10s
+    Check If Call Is Active
     End Call From PCY
