@@ -27,7 +27,7 @@ ${active_call}=    //div[@class="active-call-title"]
 ${contactcard_call_detected}=    //div[@fxlayout="column"]//swb-active-call
 ${callername_inside_contactcard}=    //h1[@class="color-primary ng-tns-c2758229062-7"]
 ${callername_inside_contact_WO_pranthesis}=    //span[@class="mat-mdc-tooltip-trigger caller-name ng-tns-c2758229062-7"]
-${leggpå_button_outline}=    //button[@color="warn"]//span[4]
+${leggpå_button_outline}=    //button[@color='warn']//span[4]
 ${leggpå_button_xpath}=    //span[normalize-space()="Legg på"]
 ${settpåvent_button_outline}=     //button[@class="btn-on-hold wide-button mdc-button mdc-button--unelevated mat-mdc-unelevated-button ng-tns-c2758229062-7 mat-unthemed mat-mdc-button-base ng-star-inserted"]//span[@class="mat-mdc-button-touch-target"]
 ${settpåvent_button_xpath}=    //span[normalize-space()="Sett på vent"]

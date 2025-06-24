@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44742d-8476-4fbd-bc09-8414f68ad818" name="Changes" comment="First commit" />
+    <list default="true" id="af44742d-8476-4fbd-bc09-8414f68ad818" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/ConnectDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/get_email_body.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/phone_appium.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_script/phone_appium.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MYMBNAutomationTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MYMBNAutomationTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/PhoneSCRCPY.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/PhoneSCRCPY.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/config.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/config.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/web_elements.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/web_elements.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/web_elements_xpath.resource" beforeDir="false" afterPath="$PROJECT_DIR$/resource/web_elements_xpath.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_script/phonecpy.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_script/phonecpy.robot" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,11 +26,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SQL File" />
         <option value="Robot" />
         <option value="Robot Test File" />
         <option value="Robot Feature File" />
         <option value="Python Script" />
+        <option value="SQL File" />
       </list>
     </option>
   </component>
@@ -29,6 +42,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;raghavisp&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/raghavisp/Automation-Testing.git&quot;,
+    &quot;accountId&quot;: &quot;1d6ff748-7da3-4aff-a2b9-9a57ba619fbb&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/resource/web_elements.resource" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -50,12 +75,18 @@
   "keyToString": {
     "JavaScript Debug.log.html.executor": "Run",
     "JavaScript Debug.report.html.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
+    "Notification.DoNotAsk-Vcs Notifications": "true",
     "Python tests.Python tests in MYMBNAutomationTest.executor": "Run",
     "Python.Highlight.executor": "Run",
     "Python.Main.robot.executor": "Run",
+    "Python.get_email_body.executor": "Run",
+    "Python.ocr_keywords.executor": "Run",
+    "Python.pabot.exe.executor": "Coverage",
     "Robot Framework.Run Current Test Suite.executor": "Run",
     "Robot Framework.Run Selected Test.executor": "Run",
     "Robot Framework.Trn Current Test Suite.executor": "Run",
+    "Robot Framework.run [App Loggin].executor": "Run",
     "Robot Framework.run [CLick Hent Button When Q Is Paused].executor": "Run",
     "Robot Framework.run [CRM For Automatisk Etter Anropet Besvares Anrop].executor": "Run",
     "Robot Framework.run [CRM For Automatisk Etter Avsluttet Anrop].executor": "Run",
@@ -64,16 +95,25 @@
     "Robot Framework.run [CRM For Åpne CRM-kobling Også Ved Utgående Anrop Med Manual Hot Key].executor": "Run",
     "Robot Framework.run [CRM For Åpne CRM-kobling Også Ved Utgående Anrop].executor": "Run",
     "Robot Framework.run [CRM For Åpne CRM-kobling ved klikk på innringernotifikasjon].executor": "Run",
+    "Robot Framework.run [Call To Q And Reply with a Message From Operator 26].executor": "Run",
     "Robot Framework.run [Call To Q And Reply with a Message From Operator].executor": "Run",
+    "Robot Framework.run [Call from Q And Caller doesnt pick up Reply with a Message From Operator].executor": "Run",
+    "Robot Framework.run [Call from one to other PCY].executor": "Run",
+    "Robot Framework.run [Check Call To Queue from MicroSIP Sett På Vent Og Gjenoppta 3].executor": "Run",
     "Robot Framework.run [Check Call To Queue from MicroSIP Sett På Vent Og Gjenoppta].executor": "Run",
     "Robot Framework.run [Check Call To Queue from MicroSIP legg På].executor": "Run",
     "Robot Framework.run [Check Hent For Multiple Call In Queue Fuctionality Negative].executor": "Run",
     "Robot Framework.run [Check Hent For Multiple Call In Queue Fuctionality].executor": "Run",
     "Robot Framework.run [Check KØ].executor": "Run",
+    "Robot Framework.run [Check SettOver Samtalen 17].executor": "Run",
+    "Robot Framework.run [Check SettOver Samtalen from MS To Number With Member of More than Avtaller 18].executor": "Run",
     "Robot Framework.run [Check SettOver Samtalen from MS To Number With Member of More than Avtaller].executor": "Run",
+    "Robot Framework.run [Check SettOver Samtalen ring from Queue 19].executor": "Run",
     "Robot Framework.run [Check SettOver Samtalen ring from Queue].executor": "Run",
     "Robot Framework.run [Check SettOver Samtalen].executor": "Run",
     "Robot Framework.run [Check for Konsult with Leggpå].executor": "Run",
+    "Robot Framework.run [Check for Konsult with SetOver 10].executor": "Run",
+    "Robot Framework.run [Check for Konsult with SetOver For External user 11].executor": "Run",
     "Robot Framework.run [Check for Konsult with SetOver For External user].executor": "Run",
     "Robot Framework.run [Check for Konsult with SetOver].executor": "Run",
     "Robot Framework.run [Check for Status].executor": "Run",
@@ -82,10 +122,13 @@
     "Robot Framework.run [Click Hent on Avvis Call].executor": "Run",
     "Robot Framework.run [Close MicroSIP Test].executor": "Run",
     "Robot Framework.run [Close MicroSIP].executor": "Run",
+    "Robot Framework.run [Decline incoming Call].executor": "Run",
+    "Robot Framework.run [Email validation from Mobile].executor": "Run",
     "Robot Framework.run [Initial Call Answer End During Login In SB Test].executor": "Run",
     "Robot Framework.run [Initial Call Answer End During Login In SB].executor": "Run",
     "Robot Framework.run [Konsult Call Ring From Queue Og SettOver].executor": "Run",
     "Robot Framework.run [Konsult Call Ring From Queue to Phone With 2 Avtaler Og SettOver].executor": "Run",
+    "Robot Framework.run [Konsult Call Ring From Queue to Phone With Offset Phone With 2 Avtaller Og SettOver 16].executor": "Run",
     "Robot Framework.run [Konsult Call Ring From Queue to Phone With Offset Phone With 2 Avtaller Og SettOver].executor": "Run",
     "Robot Framework.run [Konsult Call Ring From Queue to Phone With Onset Phone Og SettOver].executor": "Run",
     "Robot Framework.run [Konsult Call With Multiple Users On Kø Plukk Fra Kø Consult Og Settover].executor": "Run",
@@ -96,28 +139,43 @@
     "Robot Framework.run [Login Mitt MBN Check Calling from Anropslogg].executor": "Run",
     "Robot Framework.run [Login Mitt MBN Perform Sett På Vent And Gjenoppta].executor": "Run",
     "Robot Framework.run [Login and Perform Actions Check Caller].executor": "Run",
+    "Robot Framework.run [Login and Perform Actions To Pause Kø 1].executor": "Run",
     "Robot Framework.run [Login and Perform Actions To Pause Kø].executor": "Run",
     "Robot Framework.run [Login and Perform Actions].executor": "Run",
+    "Robot Framework.run [Login in Mobile APP].executor": "Run",
+    "Robot Framework.run [Login message].executor": "Run",
+    "Robot Framework.run [Make Call Scenario with decline].executor": "Run",
+    "Robot Framework.run [Make Call Scenario].executor": "Run",
+    "Robot Framework.run [Melding from Queue Custom 22].executor": "Run",
     "Robot Framework.run [Melding from Queue Custom].executor": "Run",
     "Robot Framework.run [Melding from Queue Predefined message Meldingsmal: MBN App].executor": "Run",
+    "Robot Framework.run [Melding from Queue Predefined message Meldingsmal: Ring sentralbord to External].executor": "Run",
     "Robot Framework.run [Melding from Queue Predefined message Meldingsmal: Ring sentralbord].executor": "Run",
     "Robot Framework.run [Melding from Queue Predefined message Meldingsmal: Ring til].executor": "Run",
     "Robot Framework.run [Melding from Queue].executor": "Run",
     "Robot Framework.run [Merge All Logs Into Final Report].executor": "Run",
+    "Robot Framework.run [Message Validation On Phone].executor": "Run",
+    "Robot Framework.run [Open SMS App Test2].executor": "Run",
     "Robot Framework.run [Open SMS App Test].executor": "Run",
     "Robot Framework.run [Open SMS App].executor": "Run",
     "Robot Framework.run [Open Url In New Tab Already Opened And Wait1].executor": "Run",
     "Robot Framework.run [Open Url].executor": "Run",
+    "Robot Framework.run [ReLaunch all5 calls test].executor": "Run",
     "Robot Framework.run [Receive An Incoming Call].executor": "Run",
+    "Robot Framework.run [Receive call test].executor": "Run",
+    "Robot Framework.run [Ring from Queue To Phone 20].executor": "Run",
     "Robot Framework.run [Ring from Queue To Phone].executor": "Run",
     "Robot Framework.run [Ring from Queue].executor": "Run",
     "Robot Framework.run [Run All Scenarios].executor": "Run",
     "Robot Framework.run [Send SMS Til En I Loggen].executor": "Run",
+    "Robot Framework.run [Should send keys to search box and then check the value].executor": "Run",
     "Robot Framework.run [TC1].executor": "Run",
     "Robot Framework.run [Test MicroSIP Automation].executor": "Run",
     "Robot Framework.run [Test Notification click to be deleted].executor": "Run",
     "Robot Framework.run [Transfer of call from MicroSip].executor": "Run",
+    "Robot Framework.run [check email].executor": "Run",
     "Robot Framework.run current file.executor": "Run",
+    "Robot Runner.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Test__AT",
@@ -129,8 +187,13 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
 }]]></component>
   <component name="PyConsoleOptionsProvider">
@@ -146,14 +209,61 @@
       <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\PO" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\test_script" />
       <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\log" />
+      <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\test_script" />
       <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\screen_shots" />
       <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\report" />
       <recent name="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\results" />
     </key>
   </component>
   <component name="RunManager" selected="Robot Framework.Run Selected Test">
+    <configuration name="get_email_body" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MYMBNAutomationTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/resource" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/resource/get_email_body.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pabot.exe" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="MYMBNAutomationTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (MYMBNAutomationTest)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv1/Scripts/pabot.exe" />
+      <option name="PARAMETERS" value="--processes 3 --outputdir log --loglevel DEBUG test_script/" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Run Selected Test" type="RobotFramework" factoryName="RobotFramework">
       <option name="target" value="$FilePath$" />
       <option name="args">
@@ -179,12 +289,23 @@
       <option name="makeSuite" value="true" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.pabot.exe" />
+      <item itemvalue="Python.get_email_body" />
+      <item itemvalue="Robot Framework.Run Selected Test" />
+      <item itemvalue="Robot Framework.Run Current Test Suite" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.get_email_body" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
-        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
+        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
       </set>
     </attachedChunks>
   </component>
@@ -275,7 +396,27 @@
       <workItem from="1747764951307" duration="288000" />
       <workItem from="1747765426775" duration="3924000" />
       <workItem from="1747823962133" duration="46348000" />
-      <workItem from="1748259766251" duration="18869000" />
+      <workItem from="1748259766251" duration="35231000" />
+      <workItem from="1748591020410" duration="5210000" />
+      <workItem from="1748717581962" duration="32789000" />
+      <workItem from="1748952394574" duration="1033000" />
+      <workItem from="1748953469849" duration="606000" />
+      <workItem from="1748954105989" duration="26299000" />
+      <workItem from="1749300122145" duration="2450000" />
+      <workItem from="1749308085366" duration="465000" />
+      <workItem from="1749308610072" duration="658000" />
+      <workItem from="1749309855941" duration="1224000" />
+      <workItem from="1749482056625" duration="1833000" />
+      <workItem from="1749494411024" duration="784000" />
+      <workItem from="1749495229822" duration="4297000" />
+      <workItem from="1749544393671" duration="4237000" />
+      <workItem from="1749560756156" duration="24876000" />
+      <workItem from="1749712455512" duration="9749000" />
+      <workItem from="1749730342038" duration="137000" />
+      <workItem from="1749730820632" duration="37543000" />
+      <workItem from="1750230991667" duration="82000" />
+      <workItem from="1750231111853" duration="19613000" />
+      <workItem from="1750328852344" duration="28203000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -293,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748417631080</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1748418005275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748418005275</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +476,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MYMBNAutomationTest$Main_robot.coverage" NAME="Main.robot Coverage Results" MODIFIED="1741607276465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MYMBNAutomationTest$Highlight.coverage" NAME="Highlight Coverage Results" MODIFIED="1741612123944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PO" />
+    <SUITE FILE_PATH="coverage/MYMBNAutomationTest$Main_robot.coverage" NAME="Main.robot Coverage Results" MODIFIED="1741607276465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MYMBNAutomationTest$ocr_keywords.coverage" NAME="get_email_body Coverage Results" MODIFIED="1748959486057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/resource" />
+    <SUITE FILE_PATH="coverage/MYMBNAutomationTest$pabot_exe.coverage" NAME="pabot.exe Coverage Results" MODIFIED="1750329276772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest" />
   </component>
 </project>

@@ -18,7 +18,7 @@ Open Web Browser And Maximize Login
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
     Log    Main login page loaded successfully
-    Builtin.Sleep    5s
+    Builtin.Sleep    10s
 
 Open Url In New Tab And Wait
     Execute JavaScript    window.open('${CRM_07}', '_blank')
@@ -63,8 +63,6 @@ Open CRM Page In New Tab And Verify Header
     Wait Until Element Is Visible    xpath=//h1[contains(., "${PHONE_NUMBER_2}")]    timeout=7s
     ${header_text}=    Get Text    xpath=//h1
     Log    Header text: ${header_text}
-
-
 
 
 Input LoginHint In TextBox In Login
@@ -148,9 +146,8 @@ Verify Toggle State
     Wait Until Element Is Visible    xpath=${toggle_state_inside_kø}   timeout=5s
     ${ELEMENT}    Get WebElement    xpath=${toggle_state_inside_kø}
     Sleep    2s
-    ${attribute_value}    Get Element Attribute    ${ELEMENT}    focusable
+    ${attribute_value}    SeleniumLibrary.Get Element Attribute    ${ELEMENT}    focusable
     Should Be Equal As Strings    ${attribute_value}    false
-    Execute JavaScript    arguments[0].style.border='3px solid red'    ARGUMENTS    ${ELEMENT}
     Log    Queue is active and toggle is ON
     Sleep    2s
 
@@ -190,8 +187,7 @@ Validate Caller Name
 Call To Queue Legg På
     [Documentation]    call is disconnected
     Sleep    5s
-    ${leggpå_button}    Get WebElement    xpath=${leggpå_button_outline}
-    Execute JavaScript    arguments[0].style.border='5px solid green'    ARGUMENTS    ${leggpå_button}
+    SeleniumLibrary.Wait Until Element Is Enabled    xpath=${leggpå_button_xpath}
     Sleep    1s
     Click Element    xpath=${leggpå_button_xpath}
     Log    Call Disconnected successfully
@@ -425,7 +421,10 @@ Send Medling
     Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
     Click Element    xpath=//mat-select[@role="combobox"]
     Click Element    xpath=//span[normalize-space()="Ingen mal valgt"]
-    Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
+    ${selected}=    Run Keyword And Return Status    SeleniumLibrary.Element Should Be Enabled    xpath=//input[@class='mdc-checkbox__native-control mdc-checkbox--selected']
+    Run Keyword If    ${selected}    Log    ✅ Checkbox is already checked
+    Run Keyword If    not ${selected}    Click Element    xpath=//input[@class='mdc-checkbox__native-control mdc-checkbox--selected']
+    Run Keyword If    not ${selected}    Log    🔘 Checkbox was not checked — clicked now
     Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
     Input Text    xpath=//textarea[@formcontrolname='text']    Hi, from Q via MicroSIP
     Sleep    2s
@@ -439,7 +438,10 @@ Send Medling for MBN App
     Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
     Click Element    xpath=//mat-select[@role="combobox"]
     Click Element    xpath=//span[normalize-space()="MBN App"]
-    Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
+    ${selected}=    Run Keyword And Return Status    SeleniumLibrary.Element Should Be Enabled    xpath=//input[@class='mdc-checkbox__native-control mdc-checkbox--selected']
+    Run Keyword If    ${selected}    Log    ✅ Checkbox is already checked
+    Run Keyword If    not ${selected}    Click Element    xpath=//input[@class='mdc-checkbox__native-control mdc-checkbox--selected']
+    Run Keyword If    not ${selected}    Log    🔘 Checkbox was not checked — clicked now
     Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
     Sleep    2s
     Get WebElement    xpath=//span[normalize-space()="Send"]
@@ -452,7 +454,11 @@ Send Medling for Ring sentralbord
     Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
     Click Element    xpath=//mat-select[@role="combobox"]
     Click Element    xpath=//span[normalize-space()="Ring sentralbord"]
-    Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
+    Sleep    1s
+    ${selected}=    Run Keyword And Return Status    SeleniumLibrary.Element Should Be Enabled    xpath=//input[@class='mdc-checkbox__native-control mdc-checkbox--selected']
+    Run Keyword If    ${selected}    Log    ✅ Checkbox is already checked
+    Run Keyword If    not ${selected}    Click Element    xpath=//label[normalize-space()='SMS']
+    Run Keyword If    not ${selected}    Log    🔘 Checkbox was not checked — clicked now
     Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
     Sleep    2s
     Get WebElement    xpath=//span[normalize-space()="Send"]
@@ -465,7 +471,10 @@ Send Medling for Ring til
     Wait Until Element Is Visible    xpath=//overlay-message[@class="ng-star-inserted"]    timeout=3s
     Click Element    xpath=//mat-select[@role="combobox"]
     Click Element    xpath=//span[normalize-space()="Ring til"]
-    Click Element    xpath=//input[starts-with(@id, 'mat-mdc-checkbox-') and @type='checkbox']
+    ${selected}=    Run Keyword And Return Status    SeleniumLibrary.Element Should Be Enabled    xpath=//input[@class='mdc-checkbox__native-control mdc-checkbox--selected']
+    Run Keyword If    ${selected}    Log    ✅ Checkbox is already checked
+    Run Keyword If    not ${selected}    Click Element    xpath=//input[@class='mdc-checkbox__native-control mdc-checkbox--selected']
+    Run Keyword If    not ${selected}    Log    🔘 Checkbox was not checked — clicked now
     Wait Until Element Is Visible    xpath=//textarea[@formcontrolname='text']    timeout=3s
     Sleep    2s
     Get WebElement    xpath=//span[normalize-space()="Send"]
@@ -476,10 +485,12 @@ Send Medling for Ring til
 Send SMS from Caller Active Section SB
     [Documentation]    Send SMS from Caller Active Section SB
     Log     Send SMS from Caller Active Section SB
-    Wait Until Element Is Visible    xpath=//button[3]//mat-icon[1]//*[name()="svg"]   timeout=5s
-    Get WebElement    xpath=//button[3]//mat-icon[1]//*[name()="svg"]
-    Click Element    xpath=//button[3]//mat-icon[1]//*[name()="svg"]
-    Log    clicking  SMS button ends
+    Wait Until Element Is Visible    xpath=//button[3]//mat-icon[1]//*[name()='svg']//*[name()='path']   timeout=5s
+    Mouse Over    xpath=//button[3]//mat-icon[1]//*[name()='svg']//*[name()='path']
+    Sleep    3s
+    SeleniumLibrary.Wait Until Element Is Enabled    xpath=//swb-active-call[@class='ng-tns-c2758229062-7 ng-star-inserted']//button[3]//span[4]    timeout=10s
+    Click Element    xpath=//swb-active-call[@class='ng-tns-c2758229062-7 ng-star-inserted']//button[3]
+    Log    clicking SMS button ends
     Sleep    5s
 
 
@@ -597,7 +608,7 @@ Verify and Click the Check box in Innringernotifikasjon Menu
     Sleep    3s
 
 
-
+////////////////////////////////////////////////////
 Click Menu Notat-popup
     [Documentation]   Clicking Menu Notat-popup Option
     Log    Clicking  Menu Notat-popup Option starts
@@ -611,7 +622,7 @@ Verify and Click the Check box Notat-popup Option
     Wait Until Element Is Visible    xpath=//label[normalize-space()="Notatboks vises automatisk ved besvart anrop."]    timeout=5s
     Click Element    xpath=//input[@type="checkbox"]
     Sleep    3s
-
+///////////////////////////////////////////////////////////////////////
 
 Click Vis siste innringer
     [Documentation]   Clicking Vis siste innringer
