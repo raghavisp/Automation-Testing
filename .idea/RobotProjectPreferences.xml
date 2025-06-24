@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RobotProjectPreferences">
+    <option name="robotLanguageServerPython" value="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\.venv1\Scripts\python.exe" />
+    <option name="robotLanguageServerArgs" value="[&quot;-vv&quot;, &quot;--log-file=~/robotframework_ls.log&quot;]" />
+    <option name="robotLoadVariablesFromArgumentsFile" value="C:\Program Files\Tesseract-OCR\tesseract.exe" />
+  </component>
+</project>

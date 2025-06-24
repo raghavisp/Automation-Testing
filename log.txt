@@ -1,0 +1,10 @@
+scrcpy 3.1 <https://github.com/Genymobile/scrcpy>
+INFO: ADB device found:
+INFO:           (usb)  RF8MB02MB1E                     device  SM_G973F
+INFO:           (usb)  RFCR10EJB9N                     device  SM_G996B
+INFO:     -->   (usb)  RFCT61D1Z1T                     device  SM_S906B
+C:\Users\Skype og Lync test\scrcpy-win64-v3.1\scrcpy-server: 1 file pushed, 0 skipped. 24.1 MB/s (90640 bytes in 0.004s)
+[server] INFO: Device: [samsung] samsung SM-S906B (Android 15)
+INFO: Renderer: direct3d
+INFO: Texture: 288x616
+[server] WARN: Could not get initial audio timestamp

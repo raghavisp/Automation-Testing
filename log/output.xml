@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.8 on win32)" generated="2025-06-24T22:04:24.297892" rpa="false" schemaversion="5">
+<suite id="s1" name="Phone Appium" source="C:\Users\Skype og Lync test\PycharmProjects\MYMBNAutomationTest\test_script\phone_appium.robot">
+<test id="s1-t1" name="Make Call Scenario with decline" line="36">
+<kw name="Launch Phone 785" owner="phone_appium">
+<kw name="Start Process" owner="Process">
+<msg time="2025-06-24T22:04:25.417069" level="INFO">Starting process:
+scrcpy -s RFCR10EJB9N --max-size 620 --window-x 2775 --window-y 150 --stay-awake</msg>
+<arg>scrcpy -s ${DEVICE_ID} --max-size 620 --window-x 2775 --window-y 150 --stay-awake</arg>
+<arg>shell=True</arg>
+<arg>stdout=NONE</arg>
+<arg>stderr=NONE</arg>
+<doc>Starts a new process on background.</doc>
+<status status="PASS" start="2025-06-24T22:04:25.415062" elapsed="0.020807"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL2}</arg>
+<arg>platformName=${PLATFORM_NAME2}</arg>
+<arg>automationName=${AUTOMATION_NAME2}</arg>
+<arg>udid=${DEVICE_ID}</arg>
+<arg>appPackage=com.sec.android.app.launcher</arg>
+<arg>appActivity=com.sec.android.app.launcher.activities.LauncherActivity</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-24T22:04:25.435869" elapsed="5.221538"/>
+</kw>
+<doc>Login for mobile app</doc>
+<status status="PASS" start="2025-06-24T22:04:25.413055" elapsed="5.244352"/>
+</kw>
+<kw name="Make Call 785" owner="phone_appium">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T22:04:32.657757" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T22:04:30.657407" elapsed="2.000350"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-06-24T22:04:37.536230" level="INFO">${id2} = 2</msg>
+<var>${id2}</var>
+<arg>${REMOTE_URL2}</arg>
+<arg>platformName=${PLATFORM_NAME2}</arg>
+<arg>automationName=${AUTOMATION_NAME2}</arg>
+<arg>udid=${DEVICE_ID}</arg>
+<arg>appPackage=com.sec.android.app.launcher</arg>
+<arg>appActivity=com.sec.android.app.launcher.activities.LauncherActivity</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-24T22:04:32.657757" elapsed="4.878473"/>
+</kw>
+<kw name="Switch Application" owner="AppiumLibrary">
+<arg>${id2}</arg>
+<doc>Switches the active application by index or alias.</doc>
+<status status="PASS" start="2025-06-24T22:04:37.536230" elapsed="0.000000"/>
+</kw>
+<kw name="Switch To Context" owner="AppiumLibrary">
+<arg>NATIVE_APP</arg>
+<doc>Switch to a new context</doc>
+<status status="PASS" start="2025-06-24T22:04:37.536230" elapsed="0.018358"/>
+</kw>
+<kw name="Press Keycode" owner="AppiumLibrary">
+<arg>3</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" start="2025-06-24T22:04:37.554588" elapsed="0.061303"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-06-24T22:04:37.974572" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Phone"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Phone"]</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-06-24T22:04:37.615891" elapsed="0.358681"/>
+</kw>
+<arg>AppiumLibrary.Wait Until Page Contains Element</arg>
+<arg>xpath=//android.widget.TextView[@content-desc="Phone"]</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-06-24T22:04:37.615891" elapsed="0.358681"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-24T22:04:37.979160" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Phone"]'.</msg>
+<msg time="2025-06-24T22:04:38.153020" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Phone"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Phone"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-24T22:04:37.974572" elapsed="0.182293"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-24T22:04:38.160636" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Keypad, Selected"]'.</msg>
+<msg time="2025-06-24T22:04:40.337693" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Keypad, Selected"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Keypad, Selected"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-24T22:04:38.156865" elapsed="2.180828"/>
+</kw>
+<arg>AppiumLibrary.Click Element</arg>
+<arg>xpath=//android.widget.TextView[@content-desc="Keypad, Selected"]</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2025-06-24T22:04:38.156865" elapsed="2.180828"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-24T22:04:40.337693" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id="com.samsung.android.dialer:id/dialpad_edit_text_container"]'.</msg>
+<msg time="2025-06-24T22:04:41.075648" level="INFO">xpath criteria: //android.widget.LinearLayout[@resource-id="com.samsung.android.dialer:id/dialpad_edit_text_container"]</msg>
+<arg>xpath=//android.widget.LinearLayout[@resource-id="com.samsung.android.dialer:id/dialpad_edit_text_container"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-24T22:04:40.337693" elapsed="0.737955"/>
+</kw>
+<kw name="Input Text Into Current Element" owner="AppiumLibrary">
+<msg time="2025-06-24T22:04:41.075648" level="INFO">Typing text '46180517' into current text field</msg>
+<arg>46180517</arg>
+<doc>Types the given `text` into currently selected text field.</doc>
+<status status="PASS" start="2025-06-24T22:04:41.075648" elapsed="0.724227"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-24T22:04:41.803461" level="INFO">Clicking element 'xpath=//android.widget.FrameLayout[@content-desc="Call"]'.</msg>
+<msg time="2025-06-24T22:04:43.229657" level="INFO">xpath criteria: //android.widget.FrameLayout[@content-desc="Call"]</msg>
+<arg>xpath=//android.widget.FrameLayout[@content-desc="Call"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-24T22:04:41.799875" elapsed="1.429782"/>
+</kw>
+<status status="PASS" start="2025-06-24T22:04:30.657407" elapsed="12.572250"/>
+</kw>
+<kw name="Decline call" owner="phone_appium">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-24T22:04:43.237249" level="INFO">the End Call Loop started</msg>
+<arg>the End Call Loop started</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-24T22:04:43.237249" elapsed="0.000000"/>
+</kw>
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot">
+<msg time="2025-06-24T22:04:48.815114" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" start="2025-06-24T22:04:48.815114" elapsed="0.000000">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</status>
+</kw>
+<msg time="2025-06-24T22:04:48.815114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg time="2025-06-24T22:04:48.815114" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.samsung.android.incallui' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''C:\\Users\\Skype og Lync test\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe' -P 5037 -s RF8MB02MB1E shell am start-activity -W -n com.samsung.android.incallui/com.android.incallui.call.InCallActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.samsung.android.incallui/com.android.incallui.call.InCallActivity } from null (pid=10768, uid=2000) not exported from uid 1001
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1334)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1275)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:906)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:2129)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3552)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:619)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:204)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10527)
+	at android.os.Binder.shellCommand(Binder.java:986)
+	at android.os.Binder.onTransact(Binder.java:860)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:6103)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3034)
+	at android.os.Binder.execTransactInternal(Binder.java:1220)
+	at android.os.Binder.execTransact(Binder.java:1179)
+
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.samsung.android.incallui' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''C:\\Users\\Skype og Lync test\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe' -P 5037 -s RF8MB02MB1E shell am start-activity -W -n com.samsung.android.incallui/com.android.incallui.call.InCallActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.samsung.android.incallui/com.android.incallui.call.InCallActivity } from null (pid=10768, uid=2000) not exported from uid 1001
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1334)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1275)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:906)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:2129)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3552)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:619)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:204)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10527)
+	at android.os.Binder.shellCommand(Binder.java:986)
+	at android.os.Binder.onTransact(Binder.java:860)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:6103)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3034)
+	at android.os.Binder.execTransactInternal(Binder.java:1220)
+	at android.os.Binder.execTransact(Binder.java:1179)
+
+    at getResponseForW3CError (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</msg>
+<var>${id1}</var>
+<arg>${REMOTE_URL1}</arg>
+<arg>platformName=${PLATFORM_NAME1}</arg>
+<arg>automationName=${AUTOMATION_NAME1}</arg>
+<arg>udid=${DEVICE_GS10}</arg>
+<arg>appPackage=com.samsung.android.incallui</arg>
+<arg>appActivity=com.android.incallui.call.InCallActivity</arg>
+<arg>noReset=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-06-24T22:04:43.237249" elapsed="5.598941">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.samsung.android.incallui' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''C:\\Users\\Skype og Lync test\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe' -P 5037 -s RF8MB02MB1E shell am start-activity -W -n com.samsung.android.incallui/com.android.incallui.call.InCallActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.samsung.android.incallui/com.android.incallui.call.InCallActivity } from null (pid=10768, uid=2000) not exported from uid 1001
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1334)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1275)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:906)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(A...
+    [ Message content over the limit has been removed. ]
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:204)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10527)
+	at android.os.Binder.shellCommand(Binder.java:986)
+	at android.os.Binder.onTransact(Binder.java:860)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:6103)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3034)
+	at android.os.Binder.execTransactInternal(Binder.java:1220)
+	at android.os.Binder.execTransact(Binder.java:1179)
+
+    at getResponseForW3CError (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<kw name="Switch Application" owner="AppiumLibrary">
+<arg>${id1}</arg>
+<doc>Switches the active application by index or alias.</doc>
+<status status="NOT RUN" start="2025-06-24T22:04:48.836190" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>the Decline call starts</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-06-24T22:04:48.836190" elapsed="0.000000"/>
+</kw>
+<kw name="Press Keycode" owner="AppiumLibrary">
+<arg>6</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="NOT RUN" start="2025-06-24T22:04:48.836190" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-24T22:04:48.836190" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-24T22:04:43.237249" elapsed="5.598941">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.samsung.android.incallui' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''C:\\Users\\Skype og Lync test\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe' -P 5037 -s RF8MB02MB1E shell am start-activity -W -n com.samsung.android.incallui/com.android.incallui.call.InCallActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.samsung.android.incallui/com.android.incallui.call.InCallActivity } from null (pid=10768, uid=2000) not exported from uid 1001
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1334)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1275)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:906)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(A...
+    [ Message content over the limit has been removed. ]
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:204)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10527)
+	at android.os.Binder.shellCommand(Binder.java:986)
+	at android.os.Binder.onTransact(Binder.java:860)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:6103)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3034)
+	at android.os.Binder.execTransactInternal(Binder.java:1220)
+	at android.os.Binder.execTransact(Binder.java:1179)
+
+    at getResponseForW3CError (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-24T22:04:48.836190" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-24T22:04:25.413055" elapsed="23.423135">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.samsung.android.incallui' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''C:\\Users\\Skype og Lync test\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe' -P 5037 -s RF8MB02MB1E shell am start-activity -W -n com.samsung.android.incallui/com.android.incallui.call.InCallActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.samsung.android.incallui/com.android.incallui.call.InCallActivity } from null (pid=10768, uid=2000) not exported from uid 1001
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1334)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1275)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:906)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(A...
+    [ Message content over the limit has been removed. ]
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:204)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10527)
+	at android.os.Binder.shellCommand(Binder.java:986)
+	at android.os.Binder.onTransact(Binder.java:860)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:6103)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3034)
+	at android.os.Binder.execTransactInternal(Binder.java:1220)
+	at android.os.Binder.execTransact(Binder.java:1179)
+
+    at getResponseForW3CError (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Skype og Lync test\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)</status>
+</test>
+<status status="FAIL" start="2025-06-24T22:04:24.297892" elapsed="24.538298"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Phone Appium" id="s1" pass="0" fail="1" skip="0">Phone Appium</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-06-24T22:04:48.815114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+</errors>
+</robot>
